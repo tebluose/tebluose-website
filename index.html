@@ -1,50 +1,51 @@
-<!DOCTYPE html><html lang="en"><head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>tebluose</title>
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="box">
-                <video id="background-video" autoplay="" loop="" muted="" poster="SOURCES/Wallpaper.mp4">
-                    <source src="SOURCES/Wallpaper.mp4" type="video/mp4">
-                </video>
-                <a href="https://discord.gg/hellfr" target="_blank">[discord]&nbsp;</a>
-                <h2>tebluose</h2>
-                <a href="https://github.com/tebluose" target="_blank">Github&nbsp;|</a>
-                <button onclick="togglePlay()">&nbsp;Play&nbsp;</button>
-                <a href="rien" target="_blank">|&nbsp;rien&nbsp;</a>
-            </div>
-        
-        <audio loop="" id="myMusic" autoplay="">
-            <source src="SOURCES/yeatbeat.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-        </audio>
-
-        <script>
-            
-            var myAudio = document.getElementById("myMusic");
-            var isPlaying = false;
-
-            function togglePlay() {
-              if (isPlaying) {
-                myAudio.pause()
-              } else {
-                myAudio.play();
-              }
-            };
-
-            myAudio.onplaying = function() {
-              isPlaying = true;
-            };
-
-            myAudio.onpause = function() {
-              isPlaying = false;
-            };
-
-        </script>
-
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/imgs/k3ntaa_pfp.gif">
     
-</body></html>
+    <!-- Title -->
+    <title>💤 ・ tebluose</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Javascript -->
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="header_logo">
+                <img src="assets/imgs/k3ntaa_pfp.gif" alt="" srcset="">
+            </div>
+            <div class="header_links">
+                <ul class="nav_links">
+                    <li class="nav_link"><a href="#">Home</a></li>
+                    <!-- <li class="nav_link"><a href="#">Shop</a></li> -->
+                    <!-- <li class="nav_link"><a href="#">Repos</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <img src="assets/imgs/tebluose_pfp.gif" alt="" srcset="">
+        <span>Tebluose</span>
+        <p>16 years old, French & English.</p>
+        <ul>
+            <li><a target="_blank" href="https://discord.gg/hellfr"><i class="fab fa-discord"></i></a></li>
+            <li><a target="_blank" href="https://github.com/tebluose"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCjTOV3zDOIAEj4vhTVXM87g"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
